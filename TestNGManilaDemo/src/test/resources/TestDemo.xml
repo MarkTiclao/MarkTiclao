@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestDemo">
+	<test name="Test" parallel="methods" thread-count="2">
+		<classes>
+			<class name="TestNgDemo.TestDemo1">
+				<methods>
+					<include name="Submit" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Search">
+		<classes>
+			<class name="TestNgDemo.TestDemo">
+				<methods>
+					<include name="OpenBrowser" />
+					<exclude name="LogOut" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Search1">
+		<classes>
+			<class name="TestNgDemo.TestDemo"/>
+				 
+		 
+		</classes>
+	</test>
+</suite>  
